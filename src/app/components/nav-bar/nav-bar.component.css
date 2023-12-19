@@ -1,0 +1,49 @@
+.nav-bar {
+    height: 76px;
+    width: 1150px;
+    background-color: #212121;
+    margin-left: 0;
+    position: fixed;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.navigations {
+   cursor: pointer;
+}
+
+.buttons {
+    margin-left: auto; 
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.btnn1 {
+    height: 50px;
+    width: 100px;
+    background: none;
+    border: none;
+    color: gray;
+}
+
+.btnn1:hover {
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.btnn2 {
+    background-color: white;
+    height: 50px;
+    border-radius: 40px;
+    width: 100px;
+    margin-right: 20px;
+   margin-left: 20px;
+}
+
+.btnn2:hover {
+    height: 55px;
+    border-radius: 30px;
+    
+}

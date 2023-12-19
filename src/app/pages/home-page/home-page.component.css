@@ -1,0 +1,38 @@
+.home-leftbar {
+    background-color: black;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+.home-rightbar{
+    background-color: #171616;
+    height: 100vh;
+    padding: 0;
+}
+.dark-logo{
+   height: 100x;
+   width: 200px;
+}
+.home-leftbar-item {
+    color: white;
+    font-size: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 10px;
+    padding-left: 15px;
+    font-weight: bold;
+}
+
+.home-leftbar-item:hover {
+    color: lightgray;
+    cursor: pointer;
+}
+
+i{
+    margin: 4px;
+    margin-right: 20px;
+}
