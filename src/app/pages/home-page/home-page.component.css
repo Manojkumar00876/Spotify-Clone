@@ -36,3 +36,11 @@ i{
     margin: 4px;
     margin-right: 20px;
 }
+
+.song-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    overflow-x: scroll; width: 100%;
+    
+}
