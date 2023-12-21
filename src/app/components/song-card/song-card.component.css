@@ -1,40 +1,27 @@
-
-/* .song-card-container {
-    height: 280px;
-    max-width: 250px;
-    background-color: rgb(82, 82, 82);
-     margin-top: 75px; 
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-} */
-
-.song-card-container {
+.song-card{
+    height: 250px;
+    min-width: 181px;
+    background-color: rgb(16,16,16);
     display: flex;
     flex-direction: column;
-    flex-wrap:wrap;
-    width: 100%;
-    margin-top: 75px; 
-}
-
-.card-img-top {
-    height: 164px;
-    width: 166px;
-    margin-top: 10px;
+    align-items: center;
+    margin: 20px 0px 0px 20px;
     border-radius: 10px;
-    
+    color: white;
 }
 
-.card {
-    display: flex;
-    flex-direction: column;
-    /* padding: 20px; */
-    align-items: center;
-    background-color: rgb(82, 82, 82);
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-    min-width: 202px;
-    height: 274px;
-  }
-  
+.song-thumbnail{
+    margin-top: 10px;
+} 
+.song-title {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.song-caption {
+    font-size: small;
+    text-align: center;
+    padding: 0px 5px;
+
+}

@@ -1,5 +1,5 @@
 <div class="home-container row">
-    <div class="home-leftbar col-3">
+    <div class="home-leftbar col-2">
         <div class="home-leftbar-item">
             <img src="assets/logo-dark.png" alt="spotify" class="dark-logo mt-3 ">
         </div>
@@ -12,28 +12,59 @@
         <div class="home-leftbar-item">
             <i class="fa-solid fa-book" style="color: #f5f5f5;"></i>  Your Library
          </div>
-        <!-- <div class="home-leftbar-item">
+        <!-- <div class="home-leftbar-item  ">
            Create Playlist
          </div> -->
+         <div class="bottom-content ">
+            <div class="top-content ">
+            <a href="">Legal</a>
+            <a href="">privacy center</a>
+            </div>
+            <div class="bottom-content ">
+            <a href="">privacy policy</a>
+            <a href="">Cookies</a>
+            </div>
+         </div>
     </div>
-    <div class="home-rightbar col-9">
+
+
+
+    <div class="home-rightbar col-10">
         <app-nav-bar></app-nav-bar>
-        <div class="song-container ">
-            <app-song-card  class="container mt-3"></app-song-card>
-            <app-song-card  class="container mt-3"></app-song-card>
-            <app-song-card  class="container mt-3"></app-song-card>
-            <app-song-card  class="container mt-3"></app-song-card>
-            <app-song-card  class="container mt-3"></app-song-card>
-            <app-song-card  class="container mt-3"></app-song-card>
-            <app-song-card  class="container mt-3"></app-song-card>
-           
-            <app-song-card  class="container mt-3"></app-song-card>
-           
-            <app-song-card  class="container mt-3"></app-song-card>
-           
-            <app-song-card  class="container mt-3"></app-song-card>
-           
+
+        <!-- Songs -->
+        
+        <h2>Focus</h2> 
+        <div class="song-container">
+       <app-song-card *ngFor="let song of focus"
+       [thumbnail]="song.thumbnail"
+        [title]="song.title"
+        [caption]="song.description"
+       ></app-song-card>
+       
         </div>
+
+        <!-- Playlist -->
+        <h2>Spotify Playlists</h2>
+        <div class="playlist-container">
+            <app-song-card *ngFor="let song of playlists"
+            [thumbnail]="song.thumbnail"
+             [title]="song.title"
+             [caption]="song.description"
+             ></app-song-card>
+        </div>
+
+        <!-- Sound of India -->
+        <h2>Sound of India</h2>
+        <div class="sounds-container">
+            <app-song-card *ngFor="let song of country"
+            [thumbnail]="song.thumbnail"
+             [title]="song.title"
+             [caption]="song.description"
+             ></app-song-card>
+        </div>
+
+     
 
 
 

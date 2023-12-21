@@ -1,15 +1,20 @@
+.home-container{
+    height: max-content;
+}
+
 .home-leftbar {
     background-color: black;
-    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+    height: 100vh;
+    position: relative;
 }
 .home-rightbar{
-    background-color: #171616;
-    height: 100vh;
+    background-color: rgb(27,26,26);
     padding: 0;
+    overflow-y: auto;
 }
 .dark-logo{
    height: 100x;
@@ -39,8 +44,43 @@ i{
 
 .song-container {
     display: flex;
+    width: 100%;
     flex-direction: row;
-    align-items: center;
-    overflow-x: scroll; width: 100%;
+    overflow-x: auto;
+}
+
+.song-container::-webkit-scrollbar {
+    width: 0;
+}
+
+.playlist-container , .sounds-container {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    overflow-x: auto;
+}
+
+.playlist-container::-webkit-scrollbar , .sounds-container::-webkit-scrollbar {
+    width: 0;
+}
+
+h2 {
+    margin: 20px 0px 0px 20px;
+    color: white;
+    font-weight: 600;
+    font-size: 1.8rem;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    margin-right: 25px;
     
+}
+
+
+a:hover {
+    text-decoration: none;
+    color:lightgray;
+
 }

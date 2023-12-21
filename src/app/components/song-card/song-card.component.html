@@ -1,17 +1,12 @@
-<!-- <div class="song-card-container">
- 
-</div> -->
 
-<div class="song-card-container">
-    <div class="card ">
-      <img class="card-img-top" src="assets/logo-dark.png"  alt="Card image cap">
-      <div class="card-body">
-        <h5 class="card-title">Song Title 1</h5>
-        <p class="card-text">Artist Name 1</p>
-      </div>
-    </div>
-  
+<div class="song-card">
+  <div class="song-thumbnail">
+    <img [src]="thumbnail" alt="" height="156px" width="152">
   </div>
-
-
-  
+  <div class="song-title">
+   {{title}}
+  </div>
+  <div class="song-caption">
+   {{caption}}
+  </div>
+</div>

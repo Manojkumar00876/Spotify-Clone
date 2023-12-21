@@ -1,9 +1,8 @@
 .nav-bar {
     height: 76px;
     width: 1150px;
-    background-color: #212121;
+    background-color: rgb(19,19,19);
     margin-left: 0;
-    position: fixed;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
     display: flex;
     flex-direction: row;
